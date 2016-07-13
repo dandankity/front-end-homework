@@ -1,0 +1,28 @@
+{
+  "name": "front-end-homework",
+  "version": "1.0.0",
+  "description": "food sense page",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dandankity/front-end-homework.git"
+  },
+  "keywords": [
+    "front-end"
+  ],
+  "author": "chen dan",
+  "license": "thoughtworks",
+  "bugs": {
+    "url": "https://github.com/dandankity/front-end-homework/issues"
+  },
+  "homepage": "https://github.com/dandankity/front-end-homework",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-live-server": "0.0.30",
+    "gulp-sass": "^2.3.2"
+  }
+}
