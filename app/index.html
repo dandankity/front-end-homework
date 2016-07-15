@@ -5,35 +5,34 @@
 	<title>Food Sense</title>
 </head>
 <body>
-  <div id="siderbar">
-	<img id="brand" src="images/food_sense_logo.jpg">
-	<nav>
-		<ul>
-			<li><a>Tastemakes</a></li>
-			<li><a>Blog</a></li>
-			<li><a>The A-List</a></li>
-			<li><a>Contribute</a></li>
-			<li><a>About</a></li>
-		</ul>
-	</nav>
+  <div class="siderbar float-left">
+  	<img class="brand" src="images/food_sense_logo.jpg">
+  	<nav>
+  		<ul>
+  			<li><span class="icon-spoon-knife"></span><a>Tastemakes</a></li>
+  			<li><span class="icon-book"></span><a>Blog</a></li>
+  			<li><span class="icon-clipboard"></span><a>The A-List</a></li>
+  			<li><span class="icon-camera"></span><a>Contribute</a></li>
+  			<li><span class="icon-profile"></span><a>About</a></li>
+  		</ul>
+  	</nav>
   </div>
 
-  <div id="right-sider">
-	<section id="featured">
-	   <div> <img src="images/foodsense.jpg"> </div>
-	   <div id="nav">
-	   	<ul>
-	   		<li><a><span>Tastemakes</span><p>Feast your eyes &amp; get recipes!</p></a</li>
-	   	    <li><a><span>Blog</span><p>News, how-tos, stories, and more</p></a></li>
-	   	    <li><a><span>The A-List</span><p>Handpicked, absolute favorites</p></a></li>
-	   	    <li><a><span>Contribute</span><p>We want to hear from you!</p></a></li>
-	   	</ul>
-	   </div>	   
+  <div class="right-sider float-left">
+	  <section id="featured">
+	    <div><img src="images/foodsense.jpg"></div>
+     	<ul class="featured-items clearfix">
+     		<li><a><p class="title">Tastemakes</p><p class="description">Feast your eyes &amp; get recipes!</p></a</li>
+   	    <li><a><p class="title">Blog</p><p class="description">News, how-tos, stories, and more</p></a></li>
+   	    <li class="active"><a><p class="title">The A-List</p><p class="description">Handpicked, absolute favorites</p></a></li>
+   	    <li><a><p class="title">Contribute</p><p class="description">We want to hear from you!</p></a></li>
+     	</ul>	   
     </section>
 
-    <section id="newsletter">
-    	<p>Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, and news, delivered weekly to your inbox.</p>
-    	<form>
+    <section id="newsletter" class="clearfix">
+      <span class="icon-envelop float-left"></span>
+    	<p class="float-left">Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, and news, delivered weekly to your inbox.</p>
+    	<form class="float-right">
     		<input type="text" name="email" placeholder="Email">
     		<button>Subscribe</button>
     	</form>
@@ -41,36 +40,40 @@
 
     <section id="recent">
         <article>
-             <a href="#"><img src="images/cookbooks_blog.jpg"><span>2012's Best Summer Cookbooks</span></a>
-             <p>With the best of the season coming from "orchards, farms and gardens," NPR has put together an impressive collection of 10 summer cookbooks.</p>
-             <p class="meta">
+            <div class="image-container"><img src="images/cookbooks_blog.jpg"></div>
+            <a href="#">2012's Best Summer Cookbooks</a>
+            <p class="description">With the best of the season coming from "orchards, farms and gardens," NPR has put together an impressive collection of 10 summer cookbooks.</p>
+            <p class="meta">
              	<time>May 23, 2012 &frasl;</time>
              	<a href="#">Read &rsaquo;&rsaquo;</a>
-             </p>
-        </article>	
+           </p>
+        </article>
         <article>
-             <a href="#"><img src="images/cookbooks_blog.jpg"><span>2012's Best Summer Cookbooks</span></a>
-             <p>With the best of the season coming from "orchards, farms and gardens," NPR has put together an impressive collection of 10 summer cookbooks.</p>
-             <p class="meta">
+            <div class="image-container"><img src="images/cookbooks_blog.jpg"></div>
+            <a href="#">2012's Best Summer Cookbooks</a>
+            <p class="description">With the best of the season coming from "orchards, farms and gardens," NPR has put together an impressive collection of 10 summer cookbooks.</p>
+            <p class="meta">
              	<time>May 23, 2012 &frasl;</time>
              	<a href="#">Read &rsaquo;&rsaquo;</a>
              </p>
-        </article>	
+        </article>
         <article>
-             <a href="#"><img src="images/cookbooks_blog.jpg"><span>2012's Best Summer Cookbooks</span></a>
-             <p>With the best of the season coming from "orchards, farms and gardens," NPR has put together an impressive collection of 10 summer cookbooks.</p>
-             <p class="meta">
+            <div class="image-container"><img src="images/cookbooks_blog.jpg"></div>
+            <a href="#">2012's Best Summer Cookbooks</a>
+            <p class="description">With the best of the season coming from "orchards, farms and gardens," NPR has put together an impressive collection of 10 summer cookbooks.</p>
+            <p class="meta">
              	<time>May 23, 2012 &frasl;</time>
              	<a href="#">Read &rsaquo;&rsaquo;</a>
-             </p>
-        </article>	
+            </p>
+        </article>
         <article>
-             <a href="#"><img src="images/cookbooks_blog.jpg"><span>2012's Best Summer Cookbooks</span></a>
-             <p>With the best of the season coming from "orchards, farms and gardens," NPR has put together an impressive collection of 10 summer cookbooks.</p>
-             <p class="meta">
+            <div class="image-container"><img src="images/cookbooks_blog.jpg"></div>
+            <a href="#">2012's Best Summer Cookbooks</a>
+            <p class="description">With the best of the season coming from "orchards, farms and gardens," NPR has put together an impressive collection of 10 summer cookbooks.</p>
+            <p class="meta">
              	<time>May 23, 2012 &frasl;</time>
              	<a href="#">Read &rsaquo;&rsaquo;</a>
-             </p>
+            </p>
         </article>	
     </section>
   </div>
@@ -78,14 +81,13 @@
   <aside role="social">
   	<section class="twitter">
   		<div class="title" >Latest Tweet</div>
-  		<p><a href="#" class="button">Join the conversation</a></p>
+  		<p><a href="#" class="button"><span class="icon-twitter"></span>Join the conversation</a></p>
   	</section>
   	<section class="facebook">
   		<div class="title">Let's be friends!</div>
   		<p>For weekly finds, community recommendations, and more, like us on Facebook.</p>
-  		<p><a href="#" class="button">Join the Community</a></p>
+  		<p><a href="#" class="button"><span class="icon-facebook"></span>Join the Community</a></p>
   	</section>
-
   </aside>
 
  <footer role="siteinfo">
@@ -96,11 +98,9 @@
  	      &copy; 2016 Food Sense, all rights reserved.
  	</p>
  	<div class="social">
- 		<ul>
- 			<li class="twitter"><a>Twitter</a></li>
- 			<li class="facebook"><a>Facebook</a></li>
- 			<li class="rss"><a>Subscribe via RSS</a></li>
- 		</ul>
+    <a href="#"><span class="icon-twitter"></span></a>
+    <a href="#"><span class="icon-facebook"></span></a>
+    <a href="#"><span class="icon-rss"></span></a>
  	</div>
  </footer>
 </body>
