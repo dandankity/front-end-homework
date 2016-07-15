@@ -67,3 +67,9 @@
     display: table;
     line-height: 0;
     clear: both; }
+
+.background-white {
+  background-color: #fff; }
+
+.background-black {
+  background-color: #000; }

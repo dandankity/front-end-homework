@@ -115,6 +115,12 @@ table {
     line-height: 0;
     clear: both; }
 
+.background-white {
+  background-color: #fff; }
+
+.background-black {
+  background-color: #000; }
+
 body {
   max-width: 1060px;
   margin: 50px auto; }
@@ -143,9 +149,12 @@ body {
   margin-bottom: 50px; }
   .right-sider section#featured {
     margin-bottom: 30px; }
-    .right-sider section#featured img {
+    .right-sider section#featured .featured-image img {
       display: block;
       width: 100%; }
+    .right-sider section#featured .featured-image > p {
+      position: relvative;
+      font-size: 32px; }
     .right-sider section#featured ul.featured-items {
       padding: 0;
       margin: 0;
@@ -217,41 +226,45 @@ body {
       .right-sider section#recent article p.meta {
         color: #AAA; }
 
-aside[role="social"] {
+aside.socialinfo {
   position: absolute;
   width: 150px;
   top: 480px; }
-  aside[role="social"] section {
+  aside.socialinfo section {
     margin-bottom: 30px;
     font-size: 12px; }
-    aside[role="social"] section .title {
+    aside.socialinfo section .title {
       text-transform: uppercase;
       padding-bottom: 5px;
       border-bottom: 1px dashed #E5E5E5; }
-    aside[role="social"] section p {
+    aside.socialinfo section p {
       font-style: italic;
       margin: 10px 0 15px 0;
       line-height: 1.5em; }
-    aside[role="social"] section a.button {
+    aside.socialinfo section a.button {
       display: block;
       border: 1px solid #E5E5E5;
       padding: 6px;
       border-radius: 5px;
       font-size: 1.1em; }
 
-footer[role="siteinfo"] {
+footer.siteinfo {
   position: relative;
   clear: both;
   padding-top: 20px;
   border-top: 2px solid #E5E5E5; }
-  footer[role="siteinfo"] p {
+  footer.siteinfo .footlink {
     font-size: .75em;
     line-height: 1.5em;
     color: #AAA; }
-  footer[role="siteinfo"] .social {
+    footer.siteinfo .footlink a:before {
+      content: ' | '; }
+    footer.siteinfo .footlink a:first-child:before {
+      content: ''; }
+  footer.siteinfo .social {
     position: absolute;
     right: 0;
     top: 20px; }
-    footer[role="siteinfo"] .social a > span[class^='icon-'] {
+    footer.siteinfo .social a > span[class^='icon-'] {
       font-size: 32px;
       color: #999999; }
