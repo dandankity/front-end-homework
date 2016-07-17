@@ -1,11 +1,32 @@
 $base-font-size: 16px;
-$green: #60BEAE;
 $small-font-size: 12px;
 
+$border-color: #E5E5E5;
+$green: #60BEAE;
 
 
 
 
+.float-left {
+    float: left; 
+}
+
+.float-right {
+    float: right; 
+}
+
+.clearfix {
+  *zoom: 1;
+  &:after {
+    content: '';
+    display: table;
+    line-height: 0;
+    clear: both;
+  }
+}
+
+.background-white { background-color: #fff; }
+.background-black { background-color: #000; }
 
 
 @font-face {
@@ -72,26 +93,3 @@ $small-font-size: 12px;
     content: "\ea96";
 }
 
-
-
-
-.float-left {
-	float: left; 
-}
-
-.float-right {
-	float: right; 
-}
-
-.clearfix {
-  *zoom: 1;
-  &:after {
-    content: '';
-    display: table;
-    line-height: 0;
-    clear: both;
-  }
-}
-
-.background-white { background-color: #fff; }
-.background-black { background-color: #000; }

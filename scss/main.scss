@@ -15,7 +15,7 @@ body{
 	width: 18%;
   padding-right: 2%;
   .brand { width: 75%; }
-	nav {
+	.nav {
     ul > li{
           margin: 20px 0;
           span { 
@@ -37,13 +37,25 @@ body{
 	section#featured {
 		margin-bottom: 30px;
     .featured-image {
+      position: relative;
       img {
         display: block;
         width: 100%;
       }
-      > p {
-        position: relvative; 
-        font-size: 32px;
+      > h1, h2 {
+        position: absolute;
+        padding: 10px 20px;
+        right: 0; 
+        font-style: italic;
+      }
+      > h1 {
+        bottom: 110px;
+        font-size: 24px;
+      }
+      > h2 {
+        bottom: 74px;
+        font-size: $base-font-size;
+        color: #fff;
       }
     }
 		ul.featured-items {
@@ -83,8 +95,8 @@ body{
 
 	section#newsletter {
 		clear: both;
-    border-top:1px dashed #E5E5E5;
-    border-bottom:1px dashed #E5E5E5;
+    border-top:1px dashed $border-color;
+    border-bottom:1px dashed $border-color;
     padding: 10px 0;
     span { 
       font-size: 32px;
@@ -93,7 +105,7 @@ body{
     p {
       width: 50%;
       font-style: italic;
-      font-size: 12px;
+      font-size: $small-font-size;
       line-height: 1.3em;
     }
     form {
@@ -143,7 +155,7 @@ aside.socialinfo {
     .title { 
       text-transform: uppercase;
       padding-bottom: 5px;
-      border-bottom: 1px dashed #E5E5E5;
+      border-bottom: 1px dashed $border-color;
      }
      p {
       font-style: italic;
@@ -152,7 +164,7 @@ aside.socialinfo {
      }
      a.button {
       display: block;
-      border: 1px solid #E5E5E5;
+      border: 1px solid $border-color;
       padding: 6px;
       border-radius: 5px;
       font-size: 1.1em;
@@ -164,7 +176,7 @@ footer.siteinfo {
   position: relative;
   clear: both;
   padding-top: 20px;
-  border-top: 2px solid #E5E5E5;
+  border-top: 2px solid $border-color;
   .footlink {
     font-size: .75em;
     line-height: 1.5em;

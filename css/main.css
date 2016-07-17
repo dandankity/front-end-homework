@@ -45,6 +45,26 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:after {
+    content: '';
+    display: table;
+    line-height: 0;
+    clear: both; }
+
+.background-white {
+  background-color: #fff; }
+
+.background-black {
+  background-color: #000; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?3dxkuq");
@@ -101,26 +121,6 @@ table {
 .icon-twitter:before {
   content: "\ea96"; }
 
-.float-left {
-  float: left; }
-
-.float-right {
-  float: right; }
-
-.clearfix {
-  *zoom: 1; }
-  .clearfix:after {
-    content: '';
-    display: table;
-    line-height: 0;
-    clear: both; }
-
-.background-white {
-  background-color: #fff; }
-
-.background-black {
-  background-color: #000; }
-
 body {
   max-width: 1060px;
   margin: 50px auto; }
@@ -134,13 +134,13 @@ body {
   padding-right: 2%; }
   .siderbar .brand {
     width: 75%; }
-  .siderbar nav ul > li {
+  .siderbar .nav ul > li {
     margin: 20px 0; }
-    .siderbar nav ul > li span {
+    .siderbar .nav ul > li span {
       font-size: 28px;
       vertical-align: middle;
       margin: 0 20px 0 10px; }
-    .siderbar nav ul > li a {
+    .siderbar .nav ul > li a {
       font-size: 18px;
       font-style: italic; }
 
@@ -149,12 +149,23 @@ body {
   margin-bottom: 50px; }
   .right-sider section#featured {
     margin-bottom: 30px; }
-    .right-sider section#featured .featured-image img {
-      display: block;
-      width: 100%; }
-    .right-sider section#featured .featured-image > p {
-      position: relvative;
-      font-size: 32px; }
+    .right-sider section#featured .featured-image {
+      position: relative; }
+      .right-sider section#featured .featured-image img {
+        display: block;
+        width: 100%; }
+      .right-sider section#featured .featured-image > h1, .right-sider section#featured .featured-image h2 {
+        position: absolute;
+        padding: 10px 20px;
+        right: 0;
+        font-style: italic; }
+      .right-sider section#featured .featured-image > h1 {
+        bottom: 110px;
+        font-size: 24px; }
+      .right-sider section#featured .featured-image > h2 {
+        bottom: 74px;
+        font-size: 16px;
+        color: #fff; }
     .right-sider section#featured ul.featured-items {
       padding: 0;
       margin: 0;

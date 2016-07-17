@@ -1,3 +1,23 @@
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:after {
+    content: '';
+    display: table;
+    line-height: 0;
+    clear: both; }
+
+.background-white {
+  background-color: #fff; }
+
+.background-black {
+  background-color: #000; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?3dxkuq");
@@ -53,23 +73,3 @@
 
 .icon-twitter:before {
   content: "\ea96"; }
-
-.float-left {
-  float: left; }
-
-.float-right {
-  float: right; }
-
-.clearfix {
-  *zoom: 1; }
-  .clearfix:after {
-    content: '';
-    display: table;
-    line-height: 0;
-    clear: both; }
-
-.background-white {
-  background-color: #fff; }
-
-.background-black {
-  background-color: #000; }
